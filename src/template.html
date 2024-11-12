@@ -11,7 +11,17 @@
 
     <!-- aboutMe TEMPLATE -->
     <div id="about-me-container">
-      <img src="/public/images/headshot.jpg" alt="headshot" />
+      <img
+        srcset="
+          ../public/images/headshot-320w.jpg 320w,
+          ../public/images/headshot-600w.jpg 768w
+        "
+        sizes="(max-width: 767px) 320px,
+        768px
+        "
+        src="../public/images/headshot-600w.jpg"
+        alt="headshot"
+      />
       <p>Ji Yoo</p>
       <div class="about-me-info">
         <h2>About me</h2>
@@ -27,7 +37,12 @@
             width="24"
             height="24"
           />
-          <img src="/public/images/linkedin-plain.svg" alt="linkedin icon" />
+          <img
+            src="/public/images/linkedin-plain.svg"
+            alt="linkedin icon"
+            width="24"
+            height="24"
+          />
         </div>
       </div>
     </div>
