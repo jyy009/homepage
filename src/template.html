@@ -10,41 +10,76 @@
     <div id="page-container"></div>
 
     <!-- aboutMe TEMPLATE -->
-    <div id="about-me-container">
-      <img
-        srcset="
-          ../public/images/headshot-320w.jpg 320w,
-          ../public/images/headshot-600w.jpg 768w
-        "
-        sizes="(max-width: 767px) 320px,
-        768px
-        "
-        src="../public/images/headshot-600w.jpg"
-        alt="headshot"
-      />
-      <p>Ji Yoo</p>
-      <div class="about-me-info">
-        <h2>About me</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dicta
-          hic deserunt id quae sit repellat fuga laudantium vel sequi harum
-          labore corporis dolorem? Unde quidem eos molestias autem dicta?
-        </p>
-        <div class="socials">
-          <img
-            src="/public/images/github-original.svg"
-            alt="github icon"
-            width="24"
-            height="24"
-          />
-          <img
-            src="/public/images/linkedin-plain.svg"
-            alt="linkedin icon"
-            width="24"
-            height="24"
-          />
+    <template id="about-me-template">
+      <div id="about-me-container">
+        <img
+          srcset="
+            ../public/images/headshot-320w.jpg 320w,
+            ../public/images/headshot-600w.jpg 768w
+          "
+          sizes="(max-width: 767px) 320px,
+          768px
+          "
+          src="../public/images/headshot-600w.jpg"
+          alt="headshot"
+        />
+        <p>Ji Yoo</p>
+        <div class="about-me-info">
+          <h2>About me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dicta
+            hic deserunt id quae sit repellat fuga laudantium vel sequi harum
+            labore corporis dolorem? Unde quidem eos molestias autem dicta?
+          </p>
+          <div class="socials">
+            <a href="https://github.com/jyy009" target="_blank">
+              <img
+                src="/public/images/github-original.svg"
+                alt="github icon"
+                width="24"
+                height="24"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/jyy/" target="_blank">
+              <img
+                src="/public/images/linkedin-plain.svg"
+                alt="linkedin icon"
+                width="24"
+                height="24"
+              />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </template>
+
+    <!-- myWork TEMPLATE-->
+    <template id="my-work-template">
+      <div id="my-work-container">
+        <h2>My Work</h2>
+        <img src="../public/images/restaurant-page.jpg" alt="coffee shop" />
+        <div>
+          <p class="work-name">Restaurant Page</p>
+          <div class="work-socials">
+            <a href="https://github.com/jyy009"
+              ><img
+                src="../public/images/github-original.svg"
+                alt="github logo"
+                width="24"
+                height="24"
+            /></a>
+            <a href="">
+              <img
+                src="../public/images/globe.svg"
+                alt="globe"
+                width="24"
+                height="24"
+              />
+            </a>
+          </div>
+          <p class="work-description">description</p>
+        </div>
+      </div>
+    </template>
   </body>
 </html>
