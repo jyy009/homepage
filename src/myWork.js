@@ -1,4 +1,5 @@
 import repoImages from "./repoImages.json";
+import "./myWork.css"
 
 export const myWork = () => {
   const url = "https://api.github.com/users/jyy009/repos";
@@ -49,9 +50,10 @@ export const myWork = () => {
   };
 
   const displayData = async () => {
-    // const data = await processDataFromFetch();
+    const data = await processDataFromFetch();
 
     const workh2 = document.createElement("h2");
+    workh2.classList.toggle("work-header")
     workh2.textContent = "My Work";
     portfolioContainer.appendChild(workh2);
 
@@ -59,7 +61,7 @@ export const myWork = () => {
       const myWorkTemplate = document.getElementById("my-work-template");
       const cloneMyWorkTemplate = myWorkTemplate.content.cloneNode(true);
 
-      const workImage = cloneMyWorkTemplate.querySelector("#work-image");
+      const workImage = cloneMyWorkTemplate.querySelector(".work-image");
       const repoImage = repoImages.find((img) => img.repoName === repo.name);
       console.log("repoImages:", repoImages);
 

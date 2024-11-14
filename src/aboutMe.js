@@ -2,12 +2,12 @@ import "./aboutMe.css"
 
 export const aboutMe = () => {
 
-  const portfolioContainer = document.getElementById("portfolio-section")
+  const aboutMeContainer = document.getElementById("about-me-section")
   const aboutMeTemplate = document.getElementById("about-me-template");
 
   const cloneAboutMeTemplate = aboutMeTemplate.content.cloneNode(true);
 
-  portfolioContainer.appendChild(cloneAboutMeTemplate);
+  aboutMeContainer.appendChild(cloneAboutMeTemplate);
 
 
 };

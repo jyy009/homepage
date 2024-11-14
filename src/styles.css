@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 * {
   margin: 0;
@@ -20,13 +20,6 @@ p {
   font-family: var(--font-text);
 }
 
-#my-work-container {
-  border: solid 1px black;
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -34,12 +27,11 @@ p {
   padding-right: 20px;
 }
 
-
 #page-container {
-  width: 100vw;
+  /* width: 100vw; */
+  overflow-y: auto;
+  overflow-x: hidden;
   min-height: 100vh;
 
-  #portfolio-section {
-    min-width: 100%;
-  }
+  
 }
