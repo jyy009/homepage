@@ -9,7 +9,7 @@
   <body>
     <div id="page-container" class="">
       <div id="about-me-section"></div>
-      <div id="portfolio-section"></div>
+      <div id="portfolio-section" class="container"></div>
       <div id="footer"></div>
     </div>
 
@@ -63,7 +63,7 @@
 
     <!-- myWork TEMPLATE-->
     <template id="my-work-template">
-      <div id="my-work-container" class="container">
+      <div id="my-work-container" class="">
         <div class="my-work-card">
           <img
             class="work-image"
@@ -86,8 +86,8 @@
                   <img
                     src="../public/images/globe.svg"
                     alt="globe"
-                    width="24"
-                    height="24"
+                    width="34"
+                    height="34"
                   />
                 </a>
               </div>
@@ -101,8 +101,30 @@
     <!-- contact TEMPLATE-->
     <template id="contact-template">
       <div class="contact-container container">
-        <h2>Let's talk</h2>
-        <p>Ji Yoo</p>
+        <div class="contact-info-wrapper">
+          <h2>Let's talk</h2>
+          <p>Ji Yoo</p>
+          <p>+46 (0)73 655 7156</p>
+          <p>yoo.ji.yg@gmail.com</p>
+          <div id="contact-socials">
+            <a href="https://github.com/jyy009" target="_blank">
+              <img
+                src="/public/images/github-original.svg"
+                alt="github icon"
+                width="24"
+                height="24"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/jyy/" target="_blank">
+              <img
+                src="/public/images/linkedin-plain.svg"
+                alt="linkedin icon"
+                width="24"
+                height="24"
+              />
+            </a>
+          </div>
+        </div>
         <img
           srcset="
             ../public/images/headshot-320w.jpg 320w,
@@ -114,26 +136,6 @@
           src="../public/images/headshot-600w.jpg"
           alt="headshot"
         />
-        <p>+46 (0)73 655 7156</p>
-        <p>yoo.ji.yg@gmail.com</p>
-        <div id="contact-socials">
-          <a href="https://github.com/jyy009" target="_blank">
-            <img
-              src="/public/images/github-original.svg"
-              alt="github icon"
-              width="24"
-              height="24"
-            />
-          </a>
-          <a href="https://www.linkedin.com/in/jyy/" target="_blank">
-            <img
-              src="/public/images/linkedin-plain.svg"
-              alt="linkedin icon"
-              width="24"
-              height="24"
-            />
-          </a>
-        </div>
       </div>
     </template>
   </body>

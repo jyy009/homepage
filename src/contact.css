@@ -7,10 +7,42 @@
   color: var(--color-white);
   gap: 10px;
   padding: 20px 0;
-
-
-.contact-image {
   width: 100%;
-  max-width: 300px;
+
+  .contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    #contact-socials {
+      display: flex;
+      gap: 10px;
+    }
+  }
+  img {
+    width: 100%;
+    max-width: 300px;
+  }
 }
+
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+
+    .contact-info-wrapper {
+      justify-content: start;
+      align-items: start;
+      
+      #contact-socials {
+        display: flex;
+        gap: 10px;
+      }
+    }
+
+    .contact-image {
+      width: 50%;
+    }
+  }
 }
