@@ -1,0 +1,82 @@
+[
+  {
+    "repoName": "project-music-releases-vite",
+    "imageUrl": "pub"
+  },
+  {
+    "repoName": "project-happy-thoughts-vite",
+    "imageUrl": "public/images/happythoughts.jpg"
+  },
+  {
+    "repoName": "project-survey-vite",
+    "imageUrl": "public/images/survey.jpg"
+  },
+  {
+    "repoName": "project-library",
+    "imageUrl": "public/images/recipes.jpg"
+  },
+  {
+    "repoName": "project-weather-app",
+    "imageUrl": "public/images/weatherapp.jpg"
+  },
+  {
+    "repoName": "project-chatbot",
+    "imageUrl": "public/images/plantbot.jpg"
+  },
+  {
+    "repoName": "project-business-site",
+    "imageUrl": "public/images/businesssite.jpg"
+  },
+  {
+    "repoName": "project-pizza",
+    "imageUrl": "public/images/projectpizza.jpg"
+  },
+  {
+    "repoName": "project-news-site",
+    "imageUrl": "public/images/newssite.jpg"
+  },
+  {
+    "repoName": "project-movies-vite",
+    "imageUrl": "public/images/movies.jpg"
+  },
+  {
+    "repoName": "project-todos-context-vite",
+    "imageUrl": "public/images/todotracker.jpg"
+  },
+  {
+    "repoName": "project-design-handoff-vite",
+    "imageUrl": "public/images/hiitdesign.jpg"
+  },
+  {
+    "repoName": "project-bookclub",
+    "imageUrl": "public/images/bookclub.jpg"
+  },
+  {
+    "repoName": "project-auth",
+    "imageUrl": "public/images/auth.jpg"
+  },
+  {
+    "repoName": "project-happy-thoughts-api",
+    "imageUrl": "public/images/happy-api.jpg"
+  },
+  {
+    "repoName": "project-mongo-api",
+    "imageUrl": "public/images/netflix.jpg"
+  },
+  {
+    "repoName": "project-mongo-api-frontend",
+    "imageUrl": ""
+  },
+  {
+    "repoName": "project-labyrinth-zustand-vite",
+    "imageUrl": "public/images/labyrinth.jpg"
+  },
+  {
+    "repoName": "project-express-api",
+    "imageUrl": "public/images/express.jpg"
+  },
+  {
+    "repoName": "project-tic-tac-toe",
+    "imageUrl": ""
+  }
+]

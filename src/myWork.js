@@ -1,6 +1,8 @@
+import repoImages from "./repoImages.json";
+
 export const myWork = () => {
   const url = "https://api.github.com/users/jyy009/repos";
-  const pageContainer = document.getElementById("page-container");
+  const portfolioContainer = document.getElementById("portfolio-section");
 
   const fetchProjects = async () => {
     try {
@@ -27,27 +29,66 @@ export const myWork = () => {
     console.log(filteredRepo);
 
     return filteredRepo.map((repo) => {
-      console.log(repo.name);
       let filteredName = repo.name.replace("project-", "");
-      console.log(filteredName, repo.description);
-      return { filteredName, description: repo.description };
+      console.log(
+        repo.name,
+        filteredName,
+        repo.description,
+        repo.html_url,
+        repo.homepage
+      );
+
+      return {
+        name: repo.name,
+        filteredName,
+        description: repo.description,
+        gitLink: repo.html_url,
+        deployLink: repo.homepage,
+      };
     });
   };
 
+
+
   const displayData = async () => {
-    const data = await processDataFromFetch();
+    // const data = await processDataFromFetch();
     console.log(data);
 
-    data.map((item) => {
+    const workh2 = document.createElement("h2");
+    workh2.textContent = "My Work";
+    portfolioContainer.appendChild(workh2);
+
+
+    data.forEach((repo) => {
       const myWorkTemplate = document.getElementById("my-work-template");
       const cloneMyWorkTemplate = myWorkTemplate.content.cloneNode(true);
-      pageContainer.appendChild(cloneMyWorkTemplate);
 
-      const workName = document.querySelector(".work-name");
-      workName.textContent = item.filteredName;
+      const workImage = cloneMyWorkTemplate.querySelector("#work-image");
+      const repoImage = repoImages.find((img) => 
+        img.repoName === repo.name
+      );
+      console.log("Repo name:", repo.name);
+    console.log("Found repo image:", repoImage);
+  
+      if (repoImage) {
+        workImage.setAttribute("src", repoImage.imageUrl);
+      } else {
+        console.error(`No image found for repo: ${repo.name}`)}
 
-      const workDescription = document.querySelector(".work-description");
-      workDescription.textContent = item.description;
+      const workName = cloneMyWorkTemplate.querySelector(".work-name");
+      workName.textContent = repo.filteredName;
+
+      const workDescription =
+        cloneMyWorkTemplate.querySelector(".work-description");
+      workDescription.textContent = repo.description;
+
+      const workGitLink = cloneMyWorkTemplate.querySelector(".work-git");
+      workGitLink.setAttribute("href", repo.gitLink);
+
+      const workLinkLink = cloneMyWorkTemplate.querySelector(".work-live");
+      workLinkLink.setAttribute("href", repo.deployLink);
+
+      portfolioContainer.appendChild(cloneMyWorkTemplate);
     });
   };
 

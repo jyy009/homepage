@@ -7,7 +7,11 @@
     <title>Homepage</title>
   </head>
   <body>
-    <div id="page-container"></div>
+    <div id="page-container">
+      <div id="portfolio-section"></div>
+      <div id="footer"></div>
+    </div>
+
 
     <!-- aboutMe TEMPLATE -->
     <template id="about-me-template">
@@ -56,30 +60,62 @@
     <!-- myWork TEMPLATE-->
     <template id="my-work-template">
       <div id="my-work-container">
-        <h2>My Work</h2>
-        <img src="../public/images/restaurant-page.jpg" alt="coffee shop" />
-        <div>
-          <p class="work-name">Restaurant Page</p>
-          <div class="work-socials">
-            <a href="https://github.com/jyy009"
-              ><img
-                src="../public/images/github-original.svg"
-                alt="github logo"
-                width="24"
-                height="24"
-            /></a>
-            <a href="">
-              <img
-                src="../public/images/globe.svg"
-                alt="globe"
-                width="24"
-                height="24"
-              />
-            </a>
+        <div id="my-work-card">
+          <img id="work-image" src="../public/images/bookclub.jpg" alt="coffee shop" />
+          <div>
+            <p class="work-name">Restaurant Page</p>
+            <div class="work-socials">
+              <a class="work-git" href=""
+                ><img
+                  src="../public/images/github-original.svg"
+                  alt="github logo"
+                  width="24"
+                  height="24"
+              /></a>
+              <a class="work-live" href="">
+                <img
+                  src="../public/images/globe.svg"
+                  alt="globe"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </div>
+            <p class="work-description">description</p>
           </div>
-          <p class="work-description">description</p>
         </div>
       </div>
     </template>
+
+    <!-- contact TEMPLATE-->
+     <template id="contact-template">
+       <div>
+         <h2>Let's talk</h2>
+         <p>Ji Yoo</p>
+         <img src="../public/images/headshot-circle.png" alt="headshot">
+         <p>+46 (0)73 655 7156</p>
+         <p>yoo.ji.yg@gmail.com</p>
+         <div id="contact-socials">
+          <a href="https://github.com/jyy009" target="_blank">
+            <img
+              src="/public/images/github-original.svg"
+              alt="github icon"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/jyy/" target="_blank">
+            <img
+              src="/public/images/linkedin-plain.svg"
+              alt="linkedin icon"
+              width="24"
+              height="24"
+            />
+          </a>
+         </div>
+       </div>
+     </template>
+
+
   </body>
 </html>
