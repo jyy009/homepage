@@ -7,28 +7,31 @@
     <title>Homepage</title>
   </head>
   <body>
-    <div id="page-container">
+    <div id="page-container" class="">
       <div id="portfolio-section"></div>
       <div id="footer"></div>
-
     </div>
 
     <!-- aboutMe TEMPLATE -->
     <template id="about-me-template">
-      <div id="about-me-container">
-        <img
-          srcset="
-            ../public/images/headshot-320w.jpg 320w,
-            ../public/images/headshot-600w.jpg 768w
-          "
-          sizes="(max-width: 767px) 320px,
-          768px
-          "
-          src="../public/images/headshot-600w.jpg"
-          alt="headshot"
-        />
-        <p>Ji Yoo</p>
-        <div class="about-me-info">
+      <div id="about-me-container" class="">
+        <div class="image-section">
+          <div class="image-container">
+            <img
+              srcset="
+                ../public/images/headshot-320w.jpg 320w,
+                ../public/images/headshot-600w.jpg 768w
+              "
+              sizes="(max-width: 767px) 320px,
+              768px
+              "
+              src="../public/images/headshot-600w.jpg"
+              alt="headshot"
+            />
+            <p class="name-overlay">Ji Yoo</p>
+          </div>
+        </div>
+        <div class="about-me-info container">
           <h2>About me</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dicta
@@ -61,7 +64,11 @@
     <template id="my-work-template">
       <div id="my-work-container">
         <div id="my-work-card">
-          <img id="work-image" src="../public/images/bookclub.jpg" alt="coffee shop" />
+          <img
+            id="work-image"
+            src="../public/images/bookclub.jpg"
+            alt="coffee shop"
+          />
           <div>
             <p class="work-name">Restaurant Page</p>
             <div class="work-socials">
@@ -89,10 +96,20 @@
 
     <!-- contact TEMPLATE-->
     <template id="contact-template">
-      <div>
+      <div class="contact-container container">
         <h2>Let's talk</h2>
         <p>Ji Yoo</p>
-        <img src="../public/images/headshot-circle.png" alt="headshot" />
+        <img
+          srcset="
+            ../public/images/headshot-320w.jpg 320w,
+            ../public/images/headshot-600w.jpg 768w
+          "
+          sizes="(max-width: 767px) 320px,
+              768px
+              "
+          src="../public/images/headshot-600w.jpg"
+          alt="headshot"
+        />
         <p>+46 (0)73 655 7156</p>
         <p>yoo.ji.yg@gmail.com</p>
         <div id="contact-socials">

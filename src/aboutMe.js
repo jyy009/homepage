@@ -1,3 +1,5 @@
+import "./aboutMe.css"
+
 export const aboutMe = () => {
 
   const portfolioContainer = document.getElementById("portfolio-section")

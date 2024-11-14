@@ -1,7 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --font-text: "Montserrat", serif;
+  --font-heading: "Playfair Display", serif;
+  --color-white: #fff;
+}
+
+h2 {
+  font-family: var(--font-heading);
+}
+
+p {
+  font-family: var(--font-text);
 }
 
 #my-work-container {
@@ -11,6 +27,19 @@
   margin: 10px;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
 #page-container {
-  
+  width: 100vw;
+  min-height: 100vh;
+
+  #portfolio-section {
+    min-width: 100%;
+  }
 }
