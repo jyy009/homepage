@@ -48,32 +48,26 @@ export const myWork = () => {
     });
   };
 
-
-
   const displayData = async () => {
     // const data = await processDataFromFetch();
-    console.log(data);
 
     const workh2 = document.createElement("h2");
     workh2.textContent = "My Work";
     portfolioContainer.appendChild(workh2);
-
 
     data.forEach((repo) => {
       const myWorkTemplate = document.getElementById("my-work-template");
       const cloneMyWorkTemplate = myWorkTemplate.content.cloneNode(true);
 
       const workImage = cloneMyWorkTemplate.querySelector("#work-image");
-      const repoImage = repoImages.find((img) => 
-        img.repoName === repo.name
-      );
-      console.log("Repo name:", repo.name);
-    console.log("Found repo image:", repoImage);
-  
+      const repoImage = repoImages.find((img) => img.repoName === repo.name);
+      console.log("repoImages:", repoImages);
+
       if (repoImage) {
         workImage.setAttribute("src", repoImage.imageUrl);
       } else {
-        console.error(`No image found for repo: ${repo.name}`)}
+        console.error(`No image found for repo: ${repo.name}`);
+      }
 
       const workName = cloneMyWorkTemplate.querySelector(".work-name");
       workName.textContent = repo.filteredName;
